@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xmlns:p="http://www.springframework.org/schema/p"
+     xmlns:c="http://www.springframework.org/schema/c"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+        
+         <bean class="com.SpringFramework.SpringPractice.ReferenceType.B" name="bref">
+	        	<property name="a" value="10" />
+	        	<property name="ans" value="Hello answer" />
+        </bean>
+        <bean class="com.SpringFramework.SpringPractice.ConstructorInjection.Person" name="person">
+	        	<constructor-arg value="10"/>
+	        	<constructor-arg value="Brijesh"/>
+	        	<constructor-arg value="Rajput"/>
+	        	<constructor-arg ref="bref"/>
+	        	<constructor-arg>
+	        	<list>
+	          		<value>SunDay</value>
+	          		<value>Monday</value>
+	          		<value>Tuesday</value>
+	          	</list>
+	        	</constructor-arg>
+        </bean>
+        <bean class="com.SpringFramework.SpringPractice.ConstructorInjection.Person" name="person2">
+	        	<constructor-arg value="10"/>
+	        	<constructor-arg value="Brijesh"/>
+	        	<constructor-arg value="Rajput"/>
+	        	<constructor-arg value="10000"/>
+	        	<constructor-arg ref="bref"/>
+	        	<constructor-arg>
+	        	<list>
+	          		<value>SunDay</value>
+	          		<value>Monday</value>
+	          		<value>Tuesday</value>
+	          	</list>
+	        	</constructor-arg>
+        </bean>
+        <!-- Using C schema -->
+         <bean class="com.SpringFramework.SpringPractice.ConstructorInjection.Person" name="person1" c:id="12" c:fname="Raj" c:lname="Deep" c:obj-ref="bref" c:days="monday;tues;dhs"/>
+ 
+</beans>

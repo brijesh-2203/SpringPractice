@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xmlns:context="http://www.springframework.org/schema/context"
+     xmlns:p="http://www.springframework.org/schema/p"
+     xmlns:util="http://www.springframework.org/schema/util"
+     xmlns:c="http://www.springframework.org/schema/c"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd 
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/util
+        https://www.springframework.org/schema/util/spring-util.xsd">
+        
+        <context:annotation-config />
+        
+        <!-- Standalone List/Util Schema -->
+        <util:list list-class="java.util.Vector" id="numbers">
+            <value>454545</value>
+            <value>874512</value>
+            <value>023641</value>
+            <value>896532</value>
+            <value>999855</value>
+        </util:list>
+        
+        <util:list list-class="java.util.Vector" id="num2">
+            <value>2874512</value>
+            <value>223641</value>
+            <value>296532</value>
+            <value>299855</value>
+        </util:list>
+        
+        <util:map map-class="java.util.HashMap" id="works">
+        	<entry key="Laptop" value="10"/>
+        	<entry key="RND" value="20"/>
+        	<entry key="Lunch" value="15"/>
+        </util:map>
+        
+        
+         <bean class="com.SpringFramework.SpringPractice.AutoWiring.Address" name="address" p:city="Mainpuri" p:state="Etawah" p:country="UttarPradesh"/>
+      <bean class="com.SpringFramework.SpringPractice.AutoWiring.Address" name="address1" p:city="Ahmedabad" p:state="Gujarat" p:country="India"/>
+        
+        
+        <!-- Autowiring by name --> 
+<!--         <bean class="com.SpringFramework.SpringPractice.AutoWiring.Employee" name="emp1" p:id="1" p:name="Brijesh" autowire="byName"></bean> 
+ --> 
+ <!-- Autowiring by type -->
+  <!-- <bean class="com.SpringFramework.SpringPractice.AutoWiring.Employee" name="emp2" p:id="2" p:name="Raj" autowire="byType"/> -->
+  
+   <!-- Autowiring by constructor -->
+<!--     <bean class="com.SpringFramework.SpringPractice.AutoWiring.Employee" name="emp3" c:id="3" c:name="Baji" autowire="constructor"/>
+ -->    
+    <!-- Auto wiring by Annotaion -->
+    <!--  <bean class="com.SpringFramework.SpringPractice.AutoWiring.Employee" name="emp4" p:id="3" p:name="Baji" >
+     	<property name="number" ref="numbers"/>
+     </bean>
+ 	<bean class="com.SpringFramework.SpringPractice.AutoWiring.Employee" name="emp5" p:id="5" p:name="Razi" >
+     	<property name="number" ref="numbers"/>
+     </bean> -->
+     <bean class="com.SpringFramework.SpringPractice.AutoWiring.Employee" name="emp6" c:id="6" c:name="PapaRazi" c:number-ref="num2" c:work-ref="works">
+     	<!-- <property name="number" ref="num2"/>
+     	<property name="work" ref="works"/> -->
+     </bean>
+</beans>

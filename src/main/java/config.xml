@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xmlns:p="http://www.springframework.org/schema/p"
+      xmlns:context="http://www.springframework.org/schema/context"
+	    xsi:schemaLocation="http://www.springframework.org/schema/beans
+	        http://www.springframework.org/schema/beans/spring-beans.xsd
+	         http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd">
+        
+        <bean class="com.SpringFramework.SpringPractice.Student" name="student1">
+	        	<property name="rollno">
+	        	 	<value>1</value>
+	        	</property>
+	        	<property name="name">
+	        	 	<value>Ram</value>
+	        	</property>
+	        	<property name="std">
+	        	 	<value>8</value>
+	        	</property>
+	        	<property name="marks">
+	          	<list>
+	          		<value>79</value>
+	          		<value>59</value>
+	          		<value>55</value>
+	          	</list>
+	          </property>
+	          	<property name="subjects">
+	          	<map>
+	          		<entry key="1" value="English" />
+	          		<entry key="2" value="Math" />
+	          		<entry key="3" value="Science" />
+	          	</map>
+	          </property>
+        </bean>
+        
+        <!-- Second method value as attribute -->
+        <bean class="com.SpringFramework.SpringPractice.Student" name="student2">
+	        	<property name="rollno" value="2" />
+	        	<property name="name" value="Shyam" />
+	        	<property name="std" value="9" />
+	        	<property name="marks">
+	          	<list>
+	          		<value>79</value>
+	          		<value>89</value>
+	          		<null/>
+	          		<value>100</value>
+	          	</list>
+	          </property>
+	          <property name="subjects">
+	          	<map>
+	          		<entry key="1" value="English" />
+	          		<entry key="2" value="Math" />
+	          		<entry key="3" value="Science" />
+	          	</map>
+	          </property>
+        </bean>
+        
+        <!-- Third method using p schema -->
+         <bean class="com.SpringFramework.SpringPractice.Student" name="student3" p:rollno="3" p:name="Seeta" p:std="10">
+	         <property name="marks">
+	          	<list>
+	          		<value>99</value>
+	          		<value>89</value>
+	          		<value>100</value>
+	          	</list>
+	          </property>
+	          <property name="subjects">
+	          	<map>
+	          		<entry key="1" value="English" />
+	          		<entry key="2" value="Math" />
+	          		<entry key="3" value="Science" />
+	          	</map>
+	          </property>
+         </bean>
+         
+         <!-- Ambiguity Constructor -->
+         <bean class="com.SpringFramework.SpringPractice.Ambiguity.AmbuigityConst" name="add">
+           <constructor-arg value="12" type="long" />
+           <constructor-arg value="12" type="long" />
+           
+         </bean>
+       <!-- Ambiguity Constructor -->
+        <!--  <bean class="com.SpringFramework.SpringPractice.Ambiguity.AmbuigityConst" name="add1">
+           <constructor-arg value="12" />
+           <constructor-arg value="22" />
+         </bean> -->
+ 	
+ 	
+ 	<!-- Set in List Challenge -->
+ 	 <bean class="com.SpringFramework.SpringPractice.Challenge.SetinList" name="set">
+ 	   	 <property name="number">
+ 	   			 <set>
+		          	<list>
+		          		<value>99</value>
+		          		<value>89</value>
+		          		<value>100</value>
+		          	</list>
+		          	<list>
+		          		<value>199</value>
+		          		<value>189</value>
+		          		<value>100</value>
+		          	</list>
+		          	<list>
+		          		<value>2199</value>
+		          		<value>829</value>
+		          		<value>120</value>
+		          	</list>
+	          	</set>
+	          </property>
+ 		</bean>
+ 		
+ 		<!-- Set in list in list -->
+ 		 <bean class="com.SpringFramework.SpringPractice.Challenge.SetinList" name="set1">
+ 	   	 <property name="number">
+ 	   			 <set>
+ 	   			 <list>
+		          	<list>
+		          		<value>99</value>
+		          		<value>89</value>
+		          		<value>100</value>
+		          	</list>
+		          </list>
+		          <list>
+		          	<list>
+		          		<value>199</value>
+		          		<value>189</value>
+		          		<value>100</value>
+		          	</list>
+		          	</list>
+		          	<list>
+		          	<list>
+		          		<value>2199</value>
+		          		<value>829</value>
+		          		<value>120</value>
+		          	</list>
+		          	</list>
+	          	</set>
+	          </property>
+ 		</bean>
+ 		
+ 		
+ 		
+ 		<!-- Interface implementaton using ByType -->
+ 		<bean class="com.SpringFramework.SpringPractice.InterfaceChallenge.Name" name="p"/>
+ 		<bean class="com.SpringFramework.SpringPractice.InterfaceChallenge.Address" name="address"/>
+ 		<bean class="com.SpringFramework.SpringPractice.InterfaceChallenge.InterfaceImplement" name="impl" autowire="byName"/>
+ 		
+ 		<!-- bean creation using Annotation -->
+ 		<context:component-scan base-package="com.SpringFramework.SpringPractice.Sterotype"/>
+</beans>

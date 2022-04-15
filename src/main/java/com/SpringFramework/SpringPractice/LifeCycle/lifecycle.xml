@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xmlns:context="http://www.springframework.org/schema/context"
+     xmlns:p="http://www.springframework.org/schema/p"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd 
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd">
+        
+        <context:annotation-config />
+        
+        <!-- Implement life cycle using manually declared init and destroy method -->
+<!--      <bean class="com.SpringFramework.SpringPractice.LifeCycle.Jalebi" name="j1" p:price="300" p:taste="Ummm" init-method="init" destroy-method="destroy" />
+ -->
+<!-- Implement life cycle using interface -->
+ 	<bean class="com.SpringFramework.SpringPractice.LifeCycle.Jalebi" name="j2" p:price="8000" p:taste="Wakkkkk"/>
+         
+ 
+</beans>

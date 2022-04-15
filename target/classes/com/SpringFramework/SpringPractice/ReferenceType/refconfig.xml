@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xmlns:p="http://www.springframework.org/schema/p"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+        <bean class="com.SpringFramework.SpringPractice.ReferenceType.B" name="bref">
+	        	<property name="a" value="10" />
+	        	<property name="ans" value="Hello answer" />
+        </bean>
+       <!--  <bean class="com.SpringFramework.SpringPractice.ReferenceType.A" name="aref">
+	        	<property name="a" value="10" />
+	        	<property name="name" value="Spring" />
+	        	<property name="obj" ref="bref"/>
+	        	<property name="obj">
+	        	 <ref bean="bref"/>
+	        	</property>
+        </bean> -->
+        <bean class="com.SpringFramework.SpringPractice.ReferenceType.A" name="aref" p:a="11" p:obj-ref="bref" />
+ 
+</beans>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.SpringFramework.SpringPractice.AppTest" time="0.037" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="D:\Eclipse-Java\SpringPractice\target\test-classes;D:\Eclipse-Java\SpringPractice\target\classes;C:\Users\BRIJESH RAJPUT\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\BRIJESH RAJPUT\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\BRIJESH RAJPUT\.m2\repository\org\springframework\spring-context\5.3.18\spring-context-5.3.18.jar;C:\Users\BRIJESH RAJPUT\.m2\repository\org\springframework\spring-aop\5.3.18\spring-aop-5.3.18.jar;C:\Users\BRIJESH RAJPUT\.m2\repository\org\springframework\spring-beans\5.3.18\spring-beans-5.3.18.jar;C:\Users\BRIJESH RAJPUT\.m2\repository\org\springframework\spring-expression\5.3.18\spring-expression-5.3.18.jar;C:\Users\BRIJESH RAJPUT\.m2\repository\org\springframework\spring-core\5.3.18\spring-core-5.3.18.jar;C:\Users\BRIJESH RAJPUT\.m2\repository\org\springframework\spring-jcl\5.3.18\spring-jcl-5.3.18.jar;C:\Users\BRIJESH RAJPUT\.m2\repository\javax\annotation\javax.annotation-api\1.3.2\javax.annotation-api-1.3.2.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.13\bin"/>
+    <property name="sun.java.command" value="C:\Users\BRIJES~1\AppData\Local\Temp\surefire16488568583039676890\surefirebooter1737198304923397837.jar C:\Users\BRIJESH RAJPUT\AppData\Local\Temp\surefire16488568583039676890 2022-04-15T14-11-28_642-jvmRun1 surefire5303152570131318796tmp surefire_06048186951027622261tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\Eclipse-Java\SpringPractice\target\test-classes;D:\Eclipse-Java\SpringPractice\target\classes;C:\Users\BRIJESH RAJPUT\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\BRIJESH RAJPUT\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\BRIJESH RAJPUT\.m2\repository\org\springframework\spring-context\5.3.18\spring-context-5.3.18.jar;C:\Users\BRIJESH RAJPUT\.m2\repository\org\springframework\spring-aop\5.3.18\spring-aop-5.3.18.jar;C:\Users\BRIJESH RAJPUT\.m2\repository\org\springframework\spring-beans\5.3.18\spring-beans-5.3.18.jar;C:\Users\BRIJESH RAJPUT\.m2\repository\org\springframework\spring-expression\5.3.18\spring-expression-5.3.18.jar;C:\Users\BRIJESH RAJPUT\.m2\repository\org\springframework\spring-core\5.3.18\spring-core-5.3.18.jar;C:\Users\BRIJESH RAJPUT\.m2\repository\org\springframework\spring-jcl\5.3.18\spring-jcl-5.3.18.jar;C:\Users\BRIJESH RAJPUT\.m2\repository\javax\annotation\javax.annotation-api\1.3.2\javax.annotation-api-1.3.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\BRIJESH RAJPUT"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2021-10-19"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-11.0.13"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\Eclipse-Java\SpringPractice"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\BRIJES~1\AppData\Local\Temp\surefire16488568583039676890\surefirebooter1737198304923397837.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.13+10-LTS-370"/>
+    <property name="user.name" value="BRIJESH RAJPUT"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="localRepository" value="C:\Users\BRIJESH RAJPUT\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\BRIJES~1\AppData\Local\Temp\"/>
+    <property name="java.version" value="11.0.13"/>
+    <property name="user.dir" value="D:\Eclipse-Java\SpringPractice"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.13\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk-17.0.2/bin/server;C:/Program Files/Java/jdk-17.0.2/bin;C:\Users\BRIJESH RAJPUT\Downloads\log4j-1.2.17\apache-log4j-1.2.17;C:\Program Files\Java\jdk-17.0.2\bin;C:\Windows\System32;C:\Windows;C:\Windows\System32\wbem;C:\Windows\System32\OpenSSH\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\BRIJESH RAJPUT\Downloads\apache-maven-3.8.4-bin\apache-maven-3.8.4\bin;C:\Program Files\Git\cmd;C:\Users\BRIJESH RAJPUT\Downloads\log4j-1.2.17\apache-log4j-1.2.17;C:\Program Files\Java\jdk-17.0.2;C:\Users\BRIJESH RAJPUT\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Java\jdk-11.0.13;;C:\Users\BRIJESH RAJPUT\OneDrive\Desktop;;."/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vm.version" value="11.0.13+10-LTS-370"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="shouldAnswerWithTrue" classname="com.SpringFramework.SpringPractice.AppTest" time="0.003"/>
+</testsuite>
